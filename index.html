@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroLearn – Your Gateway to the Cosmos</title>
+    <link rel="icon" href="data:image/png;base64,YOUR_BASE64_FAVICON_IMAGE">
+    <style>
+        /* CSS Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0c0f1b;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            background: #1e253a;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1em;
+        }
+
+        .nav-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #50c7c7;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2em;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9dw_YFUIz_7vnTMemBT8SA6qdEX0tFEB-w&s') center/cover no-repeat;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.7em 1.5em;
+            margin-top: 1em;
+            color: #fff;
+            background: #50c7c7;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Course Section */
+        #courses {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .course-card {
+            display: inline-block;
+            background: #1e253a;
+            padding: 1em;
+            border-radius: 10px;
+            margin: 1em;
+            width: 250px;
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            padding: 1em;
+            text-align: center;
+            background: #1e253a;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">AstroLearn 🚀</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#forum">Forum</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Unlock the Universe with AstroLearn</h1>
+        <p>From the Big Bang to Intergalactic Travel, explore the endless cosmos.</p>
+        <a href="#courses" class="button">Start Exploring</a>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-card">Astronomy Basics</div>
+        <div class="course-card">The Science of Space</div>
+        <div class="course-card">Future of Space Exploration</div>
+    </section>
+
+    <!-- AstroHub News Section -->
+    <section id="news">
+        <h2>AstroHub - Space News</h2>
+        <p>Stay updated with the latest discoveries, missions, and space technology.</p>
+    </section>
+
+    <!-- Forum Section -->
+    <section id="forum">
+        <h2>Community Forum</h2>
+        <p>Discuss astronomy with other space enthusiasts and experts!</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Bringing the universe closer to everyone.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AstroLearn. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // JavaScript for interactivity
+        document.querySelectorAll('.course-card').forEach(card => {
+            card.addEventListener('click', () => {
+                alert('This will take you to the course details page.');
+            });
+        });
+    </script>
+</body>
+</html>
